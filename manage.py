@@ -5,13 +5,10 @@ from app.models import User,Role
 # Set up migrations
 from flask_migrate import Migrate,MigrateCommand
 
-# Creating app instance
-# app = create_app('test')
-# app = create_app('development')
 app = create_app('production')
 
 
-# Create manager instance 
+# Create manager instance
 manager = Manager(app)
 
 # Create migrate instance

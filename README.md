@@ -1,4 +1,4 @@
-# the C blog
+# Personal Blog
 ## This is a personal blogging website where the Author can create and share opinions via a blog post and other users can read and comment on posts, 23/4/2018
 
 

@@ -16,7 +16,6 @@ class Role(db.Model):
     '''
     Role class to define a User's role in the database
     '''
-
     # Name of the table
     __tablename__ = 'roles'
 
@@ -137,7 +136,7 @@ class Post(db.Model):
     # post_content column for the post's content
     post_content = db.Column(db.String)
 
-    # post_date column for the post's posting date 
+    # post_date column for the post's posting date
     post_date = db.Column(db.DateTime, default=datetime.now())
 
     # user_id column for linking a post with a user
@@ -212,11 +211,11 @@ class Comment(db.Model):
             post_id : specific post_id
 
         Returns:
-            comments : all the information for comments with the specific post id 
+            comments : all the information for comments with the specific post id
         '''
         comments = Comment.query.filter_by(post_id=post_id).all()
 
-        return comments 
+        return comments
 
     @classmethod
     def delete_single_comment(cls,comment_id):
@@ -228,18 +227,3 @@ class Comment(db.Model):
         '''
         comment = Comment.query.filter_by(id=comment_id).delete()
         db.session.commit()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
