@@ -38,4 +38,4 @@ No known bugs
 
 ### License
 
-MIT (c) 2018 **[Rose Oketch]**
+MIT (c) 2018 **Rose Oketch**
