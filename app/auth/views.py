@@ -50,7 +50,3 @@ def register():
     title="New Account"
 
     return render_template('auth/register.html', registration_form=form, title=title)
-
-
-
-

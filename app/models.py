@@ -115,7 +115,7 @@ class User(UserMixin,db.Model):
         users_emails = []
         for user in users:
             users_emails.append(user.email)
-        return users_emails
+            return users_emails
 
 
 

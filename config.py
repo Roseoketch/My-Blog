@@ -9,7 +9,7 @@ class Config:
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-    # simple mde configurations
+    # simplemde configurations
     SIMPLEMDE_JS_IIFE = True
     SIMPLEMDE_USE_CDN = True
 
@@ -38,6 +38,7 @@ class TestConfig(Config):
     Args:
         Config: The parent configuration class with General configuration settings
     '''
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://rose:rose@localhost/blog'
 
     pass
 
@@ -49,7 +50,7 @@ class DevConfig(Config):
         Config: The parent configuration class with General configuration settings
     '''
 
-    # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://rose:rose@localhost/blog'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://rose:rose@localhost/blog'
     pass
     DEBUG = True
 
