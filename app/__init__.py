@@ -20,7 +20,7 @@ mail = Mail()
 def create_app(config_name):
     '''
     Function that takes configuration setting key as an argument
-    
+
     Args:
         config_name : name of the configuration to be used
     '''
@@ -46,9 +46,5 @@ def create_app(config_name):
     # Regestering the auth bluprint
     from .auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint, url_prefix='/auth')
-
-    # Setting config when using an API
-    # from .requests import configure_request
-    # configure_request(app)
 
     return app
