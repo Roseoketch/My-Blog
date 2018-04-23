@@ -2,7 +2,7 @@
 ## This is a personal blogging website where the Author can create and share opinions via a blog post and other users can read and comment on posts, 23/4/2018
 
 
-## By **[Carol Wanjohi](https://github.com/carolwanjohi)**
+## By **Roseoketch**
 
 ## Description
 This is a web application that allows me, as a writer, to create blog posts to share my opinions. Users, who are readers, can reader my posts and comment on them. They can also subscribe for updates when there is a new blog post.<br>
