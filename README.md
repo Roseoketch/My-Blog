@@ -1,11 +1,11 @@
 # the C blog
-## This is a personal blogging website where [I](https://github.com/carolwanjohi) can create and share my opinions via a blog post and other users can read and comment on posts, 3/11/2017
+## This is a personal blogging website where the Author can create and share opinions via a blog post and other users can read and comment on posts, 23/4/2018
 
 
 ## By **[Carol Wanjohi](https://github.com/carolwanjohi)**
 
 ## Description
-[This](https://python-personal-blog.herokuapp.com/) is a web application that allows me, as a writer, to create blog posts to share my opinions. Users, who are readers, can reader my posts and comment on them. They can also subscribe for updates when there is a new blog post.<br>
+This is a web application that allows me, as a writer, to create blog posts to share my opinions. Users, who are readers, can reader my posts and comment on them. They can also subscribe for updates when there is a new blog post.<br>
 
 Other functionalities that the writer has are: <br>
 - deleting a post
