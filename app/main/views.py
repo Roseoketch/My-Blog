@@ -18,9 +18,9 @@ def index():
     '''
 
     title = 'Home'
-    posts = Post.get_posts()
+    # posts = Post.get_posts()
 
-    return render_template('index.html', title = title, posts=posts )
+    return render_template('index.html', title = title)
 
 @main.route('/post/<int:id>')
 def post(id):
@@ -196,12 +196,12 @@ def update_post(id):
         form = PostForm(obj=current_post)
 
         if form.validate_on_submit():
-            
+
             form.populate_obj(current_post)
 
             comments = Comment.query.filter_by(post_id=id).all()
             post = Post.query.filter_by(id=id).update({
-                'post_title': form.post_title.data, 
+                'post_title': form.post_title.data,
                 'post_content': form.post_content.data
                 })
             db.session.commit()
@@ -214,19 +214,3 @@ def update_post(id):
 
     else:
         abort(404)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
